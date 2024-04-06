@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+     <link rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/font/style.css">
+     <title>Book Filter</title>
+</head>
+
+<body>
+
+     <!--! Navbar -->
+     <nav>
+          <div class="container">
+               <div class="nav__content">
+                    <div class="nav__logo">
+                         <img src="./assets/images/logo.png" alt="Logo">
+                    </div>
+                    <div class="nav__menu">
+                         <button class="btn btn-menu">Menu <span
+                                   class="icon-package icon-arrrow-full-down"></span></button>
+                         <form action="">
+                              <label for="">
+                                   <input type="text" placeholder="Find books here..">
+                                   <span class="icon-package icon-search"></span>
+                              </label>
+                         </form>
+                         <span class="icon-package icon-basket"></span>
+                    </div>
+                    <div class="nav__register">
+                         <button class="btn">Sign in</button>
+                         <button class="btn">Create account</button>
+                    </div>
+               </div>
+          </div>
+     </nav>
+     <section class="navbar active">
+          <div class="container">
+               <div class="navbar__content">
+                    <ul class="navbar__list">
+                         <li class="navbar__item navbar__active navbar__item-icon"><span
+                                   class="icon-package icon-full-arrow-left"></span><a href="#"
+                                   class="navbar__link navbar__active">Home</a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link">Books</a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link">Magazine</a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link">Textbooks</a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link">Audiobooks</a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link">Recomened</a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link">Sale</a></li>
+                    </ul>
+               </div>
+          </div>
+     </section>
+
+     <section class="url">
+          <div class="container">
+               <div class="url__content">
+                    <p>Home</p>
+                    <span>Books</span>
+               </div>
+          </div>
+     </section>
+
+     <section class="filter">
+          <div class="container">
+               <div class="filter__content">
+                    <div class="filter__content-input">
+                         <div class="filter__input-header">
+                              <p class="input_header">Filter</p>
+                         </div>
+                         <div class="filter__input-categories">
+                              <div class="filter__categories-header">
+                                   <p class="filter_categories-text">Categories</p>
+                                   <span class="filter_categories-icon">Ico</span>
+                              </div>
+                              <form action="" class="filter_form">
+                                   <label for="labelRadio" class="label label_active">
+                                        <input type="radio" name="radio" id="labelRadio" class="radio__input">
+                                        <div class="radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        All Categories
+                                   </label>
+                                   <label for="labelRadio2" class="label">
+                                        <input type="radio" name="radio" id="labelRadio2" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Arts & Photography
+                                   </label>
+                                   <label for="labelRadio3" class="label">
+                                        <input type="radio" name="radio" id="labelRadio3" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Biographies & Memory
+                                   </label>
+                                   <label for="labelRadio4" class="label">
+                                        <input type="radio" name="radio" id="labelRadio4" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Children’s Book
+                                   </label>
+                                   <label for="labelRadio5" class="label">
+                                        <input type="radio" name="radio" id="labelRadio5" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Cookbook & Food
+                                   </label>
+                                   <label for="labelRadio6" class="label">
+                                        <input type="radio" name="radio" id="labelRadio6" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        History
+                                   </label>
+                                   <label for="labelRadio7" class="label">
+                                        <input type="radio" name="radio" id="labelRadio7" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Literature & Fiction
+                                   </label>
+                                   <label for="labelRadio8" class="label">
+                                        <input type="radio" name="radio" id="labelRadio8" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Romance
+                                   </label>
+                                   <label for="labelRadio9" class="label">
+                                        <input type="radio" name="radio" id="labelRadio9" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Sicfi & Fantasy
+                                   </label>
+                                   <label for="labelRadio10" class="label">
+                                        <input type="radio" name="radio" id="labelRadio10" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Teen & Young Adult
+                                   </label>
+                              </form>
+                              <div class="load_more">
+                                   <p>+ <a href="#">Load more</a></p>
+                              </div>
+                         </div>
+
+                         <div class="filter__input-categories">
+                              <div class="filter__categories-header">
+                                   <p class="filter_categories-text">Book Format</p>
+                                   <span class="filter_categories-icon">Ico</span>
+                              </div>
+                              <form action="" class="filter_form">
+                                   <label for="labelRadio11" class="label label_active">
+                                        <input type="radio" name="radio" id="labelRadio11" class="radio__input">
+                                        <div class="radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        All Format
+                                   </label>
+                                   <label for="labelRadio12" class="label">
+                                        <input type="radio" name="radio" id="labelRadio12" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Hard Cover
+                                   </label>
+                                   <label for="labelRadio13" class="label">
+                                        <input type="radio" name="radio" id="labelRadio13" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Paper Back
+                                   </label>
+                                   <label for="labelRadio14" class="label">
+                                        <input type="radio" name="radio" id="labelRadio14" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Children’s Book
+                                   </label>
+                                   <label for="labelRadio15" class="label">
+                                        <input type="radio" name="radio" id="labelRadio15" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Cookbook & Food
+                                   </label>
+                              </form>
+                         </div>
+
+                         <div class="filter__input-categories">
+                              <div class="filter__categories-header">
+                                   <p class="filter_categories-text">Publisher</p>
+                                   <span class="filter_categories-icon">Ico</span>
+                              </div>
+                              <form action="" class="filter_form">
+                                   <label for="labelRadio16" class="label label_active">
+                                        <input type="radio" name="radio" id="labelRadio16" class="radio__input">
+                                        <div class="radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        All Format
+                                   </label>
+                                   <label for="labelRadio17" class="label">
+                                        <input type="radio" name="radio" id="labelRadio17" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Hard Cover
+                                   </label>
+                                   <label for="labelRadio18" class="label">
+                                        <input type="radio" name="radio" id="labelRadio18" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Paper Back
+                                   </label>
+
+                              </form>
+                         </div>
+
+                         <div class="filter__input-categories">
+                              <div class="filter__categories-header">
+                                   <p class="filter_categories-text">Years</p>
+                                   <span class="filter_categories-icon">Ico</span>
+                              </div>
+                              <form action="" class="filter_form">
+                                   <label for="labelRadio19" class="label label_active">
+                                        <input type="radio" name="radio" id="labelRadio19" class="radio__input">
+                                        <div class="radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        All Format
+                                   </label>
+                                   <label for="labelRadio20" class="label">
+                                        <input type="radio" name="radio" id="labelRadio20" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Hard Cover
+                                   </label>
+                                   <label for="labelRadio21" class="label">
+                                        <input type="radio" name="radio" id="labelRadio21" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Paper Back
+                                   </label>
+                                   <label for="labelRadio22" class="label">
+                                        <input type="radio" name="radio" id="labelRadio22" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Children’s Book
+                                   </label>
+                                   <label for="labelRadio23" class="label">
+                                        <input type="radio" name="radio" id="labelRadio23" class="radio__input">
+                                        <div class=" radio__radio"></div>
+                                        <div class="bg_delete"></div>
+                                        Cookbook & Food
+                                   </label>
+                              </form>
+                         </div>
+
+
+                         <div class="filter__input-categories">
+                              <div class="filter__categories-header">
+                                   <p class="filter_categories-text">Price Range</p>
+                                   <span class="filter_categories-icon">Ico</span>
+                              </div>
+                              <form action="" class="filter_form">
+
+                              </form>
+                         </div>
+
+                         <div class="filter__btn">
+                              <button class="btn">Refine Search</button>
+                              <button class="btn">Reset Filter</button>
+                         </div>
+
+                    </div>
+                    <div class="filter__content-cards">
+                         <div class="filter__content-title">
+                              <div class="filter__content-title-info">
+                                   <p class="filter_info">Books</p>
+                                   <p class="filter_text">Over 475+ books available here, find it now!</p>
+                              </div>
+                              <div class="filter__content-title-icon">
+                                   <div class="filter__content-sort">
+                                        <div class="newest">Newest</div>
+                                        <div class="filter__content-sort-content d-none">
+                                             <p class="filter-active">Newest</p>
+                                             <p>Oldest</p>
+                                             <p>Best Sellers</p>
+                                        </div>
+                                   </div>
+                                   <div class="filter__content-square">Icon</div>
+                                   <div class="filter__content-menu">Icon</div>
+                              </div>
+                         </div>
+                         <div class="filter__content-cards-content">
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <p class="filter-sale">
+                                                  Best seller
+                                             </p>
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                             <span>$25,94</span>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                             <span>$25,94</span>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                             <span>$25,94</span>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <p class="filter-sale">
+                                                  Best seller
+                                             </p>
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <p class="filter-sale">
+                                                  Best seller
+                                             </p>
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                        </div>
+                                   </a>
+                              </div>
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                        </div>
+                                   </a>
+                              </div>
+
+                              <div class="book__trend-card-item filter-item">
+                                   <a href="">
+                                        <div class="book__trend-card-item-img filter-img">
+                                             <div class="filter-icon">
+                                                  <span>hea</span>
+                                                  <span>sea</span>
+                                                  <span>bas</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="seller__item-info-title filter-title">
+                                             <span></span>
+                                             <p class="filter-after">4.5</p>
+                                             <p class="filter-reverse">495 Revierse</p>
+                                        </div>
+                                        <div class="seller__item-info-title">
+                                             <button class="filter-btn">Biography</button>
+                                        </div>
+                                        <div class="seller__item-info-header filter-author">
+                                             <p>SUNGLASES</p>
+                                             <span>John Doe</span>
+                                        </div>
+                                        <div class="seller__item-info-footer filter-price">
+                                             <span>$15,63</span>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="news__btn">
+                    <button class="btn filter_btn">View more</button>
+               </div>
+          </div>
+     </section>
+
+
+     <section class="seller filter-seller">
+          <div class="container">
+               <div class="seller__content">
+                    <div class="categories__content-header">
+                         <div class="categories__content-title">
+                              <p>Maybe you like it</p>
+                         </div>
+                         <div class="categories__content-btn wiev">
+                              <button>Wiev more</button>
+                         </div>
+                    </div>
+               </div>
+               <div class="seller__card">
+                    <div class="seller__card-btn next">
+                         <button id="seller-arrow">
+                              < </button>
+                    </div>
+                    <div class="seller__card-content" id="seller__slick">
+
+                         <div class="seller__item">
+                              <div class="seller__item-img"></div>
+                              <div class="seller__item-info">
+                                   <div class="seller__item-info-title">
+                                        <button>Biography</button>
+                                        <span>4,5</span>
+                                   </div>
+                                   <div class="seller__item-info-header">
+                                        <p>The Advanture</p>
+                                        <span>Jasmine Belle</span>
+                                   </div>
+                                   <div class="seller__item-info-footer">
+                                        <span>$24,99</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="seller__item">
+                              <div class="seller__item-img"></div>
+                              <div class="seller__item-info">
+                                   <div class="seller__item-info-title">
+                                        <button>Nature</button>
+                                        <span>4,5</span>
+                                   </div>
+                                   <div class="seller__item-info-header">
+                                        <p>Story of Everest</p>
+                                        <span>Henry Mortopa</span>
+                                   </div>
+                                   <div class="seller__item-info-footer">
+                                        <span>$15,63</span>
+                                        <span>$25,99</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="seller__item">
+                              <div class="seller__item-img"></div>
+                              <div class="seller__item-info">
+                                   <div class="seller__item-info-title">
+                                        <button>Advanture</button>
+                                        <span>4,5</span>
+                                   </div>
+                                   <div class="seller__item-info-header">
+                                        <p>Life of Wilds</p>
+                                        <span>Ijeomao Oluo</span>
+                                   </div>
+                                   <div class="seller__item-info-footer">
+                                        <span>$15,63</span>
+                                        <span>$16,99</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="seller__item">
+                              <div class="seller__item-img"></div>
+                              <div class="seller__item-info">
+                                   <div class="seller__item-info-title">
+                                        <button>Advanture</button>
+                                        <span>4,5</span>
+                                   </div>
+                                   <div class="seller__item-info-header">
+                                        <p>Life of Wilds</p>
+                                        <span>Ijeomao Oluo</span>
+                                   </div>
+                                   <div class="seller__item-info-footer">
+                                        <span>$15,63</span>
+                                        <span>$16,99</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="seller__item">
+                              <div class="seller__item-img"></div>
+                              <div class="seller__item-info">
+                                   <div class="seller__item-info-title">
+                                        <button>Advanture</button>
+                                        <span>4,5</span>
+                                   </div>
+                                   <div class="seller__item-info-header">
+                                        <p>Life of Wilds</p>
+                                        <span>Ijeomao Oluo</span>
+                                   </div>
+                                   <div class="seller__item-info-footer">
+                                        <span>$15,63</span>
+                                        <span>$16,99</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="seller__card-btn previous">
+                         <button id="seller-arrow1">></button>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
+     <section class="users__number filter-user">
+          <div class="container">
+               <div class="users__content">
+                    <div class="users__content-item">
+                         <div class="users__item-title filter-user-title">
+                              <span>Icon</span>
+                              <p>268</p>
+                         </div>
+                         <div class="users__item-info filter-user-info">
+                              <p>Our stores around the world</p>
+                         </div>
+                    </div>
+                    <div class="users__content-item">
+                         <div class="users__item-title filter-user-title">
+                              <span>Icon</span>
+                              <p>25,634</p>
+                         </div>
+                         <div class="users__item-info filter-user-info">
+                              <p>Our happy customers</p>
+                         </div>
+                    </div>
+                    <div class="users__content-item">
+                         <div class="users__item-title filter-user-title">
+                              <span>Icon</span>
+                              <p>68+k</p>
+                         </div>
+                         <div class="users__item-info filter-user-info">
+                              <p>Book Collections</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+     <section class="news filter-news">
+          <div class="container">
+               <div class="news__content">
+                    <div class="news__content-title">
+                         <p>Letest News</p>
+                         <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut
+                              labore et dolore magna aliqua
+                         </p>
+                    </div>
+
+                    <div class="news__list">
+                         <div class="news__item">
+                              <div class="news__item-img"></div>
+                              <div class="news__item-content">
+                                   <h4>Why reading is important for our children?</h4>
+                                   <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore...
+                                        <a href="#">Continue reading</a>
+                                   </p>
+                                   <div class="news__item-author">
+                                        <div class="news__author-img"></div>
+                                        <div class="news__author-info">
+                                             <h6>James Wong</h6>
+                                             <p>2 days ago</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="news__item">
+                              <div class="news__item-img"></div>
+                              <div class="news__item-content">
+                                   <h4>Why reading is important for our children?</h4>
+                                   <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore...
+                                        <a href="#">Continue reading</a>
+                                   </p>
+                                   <div class="news__item-author">
+                                        <div class="news__author-img"></div>
+                                        <div class="news__author-info">
+                                             <h6>James Wong</h6>
+                                             <p>2 days ago</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="news__item">
+                              <div class="news__item-img"></div>
+                              <div class="news__item-content">
+                                   <h4>Why reading is important for our children?</h4>
+                                   <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore...
+                                        <a href="#">Continue reading</a>
+                                   </p>
+                                   <div class="news__item-author">
+                                        <div class="news__author-img"></div>
+                                        <div class="news__author-info">
+                                             <h6>James Wong</h6>
+                                             <p>2 days ago</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="news__item">
+                              <div class="news__item-img"></div>
+                              <div class="news__item-content">
+                                   <h4>Why reading is important for our children?</h4>
+                                   <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore...
+                                        <a href="#">Continue reading</a>
+                                   </p>
+                                   <div class="news__item-author">
+                                        <div class="news__author-img"></div>
+                                        <div class="news__author-info">
+                                             <h6>James Wong</h6>
+                                             <p>2 days ago</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="news__btn">
+                    <button class="btn">View more</button>
+               </div>
+          </div>
+     </section>
+
+     <section class="delivery filter-delivery">
+          <div class="container">
+               <div class="delivery__content">
+                    <div class="delivery__card">
+                         <div class="delivery__card-images">
+                              <img src="./assets/images/icon.png" alt="Photo">
+                         </div>
+                         <div class="delivery__card-title">
+                              <p>Quick Delivery</p>
+                         </div>
+                         <div class="delivery__card-info">
+                              <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                   incididunt ut labore et dolore magna aliqua.
+                              </p>
+                         </div>
+                    </div>
+
+                    <div class="delivery__card">
+                         <div class="delivery__card-images">
+                              <img src="./assets/images/icon (1).png" alt="Photo">
+                         </div>
+                         <div class="delivery__card-title">
+                              <p>Secure Payment</p>
+                         </div>
+                         <div class="delivery__card-info">
+                              <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                   incididunt ut labore et dolore magna aliqua.
+                              </p>
+                         </div>
+                    </div>
+
+                    <div class="delivery__card">
+                         <div class="delivery__card-images">
+                              <img src="./assets/images/icon (2).png" alt="Photo">
+                         </div>
+                         <div class="delivery__card-title">
+                              <p>Best Quality</p>
+                         </div>
+                         <div class="delivery__card-info">
+                              <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                   incididunt ut labore et dolore magna aliqua.
+                              </p>
+                         </div>
+                    </div>
+                    <div class="delivery__card">
+                         <div class="delivery__card-images">
+                              <img src="./assets/images/icon (3).png" alt="Photo">
+                         </div>
+                         <div class="delivery__card-title">
+                              <p>Return Guarantee</p>
+                         </div>
+                         <div class="delivery__card-info">
+                              <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                   incididunt ut labore et dolore magna aliqua.
+                              </p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
+     <section class="update">
+          <div class="container">
+               <div class="update__content">
+                    <div class="update__info">
+                         <p>Subscribe our newsletter for newest books updates</p>
+                    </div>
+                    <div class="update__form">
+                         <form action="">
+                              <label for="">
+                                   <input type="text" placeholder="Type your email here">
+                              </label>
+                              <button class="btn">Subscrice</button>
+                         </form>
+                    </div>
+                    <img src="./assets/images/circleElement1.png" alt="">
+               </div>
+          </div>
+     </section>
+
+     <footer>
+          <div class="container">
+               <div class="footer__content">
+                    <div class="footer__content-logo">
+                         <div class="footer__logo">
+                              <img src="./assets/images/logo.png" alt="">
+                         </div>
+                         <div class="footer__content-info">
+                              <p>
+                                   Clevr is a online bookstore website who sells all genres of books from around the
+                                   world. Find your book here now
+                              </p>
+                         </div>
+                         <div class="footer__content-icon">
+                              <p>Follow Us</p>
+                              <span>face</span>
+                              <span>youtube</span>
+                              <span>twetter</span>
+                              <span>instagram</span>
+                         </div>
+                    </div>
+
+                    <div class="footer__content-card">
+                         <ul class="footer__content-list">
+                              <p>Quick Links</p>
+                              <li><a href="">About us</a></li>
+                              <li><a href="">Contact us</a></li>
+                              <li><a href="">Product</a></li>
+                              <li><a href="">Login</a></li>
+                              <li><a href="">Sign up</a></li>
+                         </ul>
+                         <ul class="footer__content-list">
+                              <p>Customer Area</p>
+                              <li><a href="">My Account</a></li>
+                              <li><a href="">Orders</a></li>
+                              <li><a href="">Tracking List</a></li>
+                              <li><a href="">Terma</a></li>
+                              <li><a href="">Privacy Polisy</a></li>
+                              <li><a href="">FAQ</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="footer__content-form">
+                         <div class="footer__content-form-title">
+                              <p>Don’t miss the newest books</p>
+                         </div>
+                         <div class="footer__content-form-info">
+                              <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                   incididunt ut
+                              </p>
+                         </div>
+                         <div class="footer__content-form-btn">
+                              <form action="">
+                                   <label for="">
+                                        <input type="text" placeholder="Type your email here">
+                                   </label>
+                                   <button class="btn">Subscribe</button>
+                              </form>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </footer>
+
+
+
+
+     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
