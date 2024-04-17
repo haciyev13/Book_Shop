@@ -21,14 +21,14 @@
           <div class="container">
                <div class="nav__content">
                     <div class="nav__logo">
-                         <img src="./assets/images/logo.png" alt="Logo">
+                         <a href="/index.html"><img src="./assets/images/logo.png" alt="Logo"></a>
                     </div>
                     <div class="nav__menu">
                          <button class="btn btn-menu">Menu <span
                                    class="icon-package icon-arrrow-full-down"></span></button>
                          <form action="">
                               <label for="">
-                                   <input type="text" placeholder="Find books here..">
+                                   <input type="text" name="q" placeholder="Find books here..">
                                    <span class="icon-package icon-search"></span>
                               </label>
                          </form>
@@ -46,14 +46,16 @@
                <div class="navbar__content">
                     <ul class="navbar__list">
                          <li class="navbar__item navbar__active navbar__item-icon"><span
-                                   class="icon-package icon-full-arrow-left"></span><a href="#"
+                                   class="icon-package icon-full-arrow-left"></span><a href="/index.html"
                                    class="navbar__link navbar__active">Home</a></li>
-                         <li class="navbar__item"><a href="#" class="navbar__link">Books</a></li>
-                         <li class="navbar__item"><a href="#" class="navbar__link">Magazine</a></li>
-                         <li class="navbar__item"><a href="#" class="navbar__link">Textbooks</a></li>
-                         <li class="navbar__item"><a href="#" class="navbar__link">Audiobooks</a></li>
-                         <li class="navbar__item"><a href="#" class="navbar__link">Recomened</a></li>
-                         <li class="navbar__item"><a href="#" class="navbar__link">Sale</a></li>
+                         <li class="navbar__item"><a href="/books-filter.html" target="_blank"
+                                   class="navbar__link">Books</a></li>
+                         <li class="navbar__item"><a href="/total-book.html" target="_blank"
+                                   class="navbar__link">Sale</a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link"></a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link"></a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link"></a></li>
+                         <li class="navbar__item"><a href="#" class="navbar__link"></a></li>
                     </ul>
                </div>
           </div>
@@ -153,29 +155,7 @@
                          </p>
                     </div>
                     <div class="book__trend-card">
-                         <div class="book__trend-card-item">
-                              <a href="">
-                                   <div class="book__trend-card-item-img">
-                                        <div class="book__trend-card-item-best">
-                                             <span class="icon-package icon-star"></span>
-                                             <p>4.5</p>
-                                        </div>
-                                   </div>
-                              </a>
-                              <div class="book__trend-card-item-title">
-                                   <p>Biography</p>
-                              </div>
-                              <div class="book__trend-card-item-info">
-                                   <p>Such a Fun Age</p>
-                                   <span>James Sulivan</span>
-                              </div>
-                              <div class="book__trend-card-item-price">
-                                   <p>$56,9</p>
-                              </div>
-                         </div>
-
-
-                         <div class="book__trend-card-item">
+                         <!-- <div class="book__trend-card-item">
                               <a href="">
                                    <div class="book__trend-card-item-img">
                                         <div class="book__trend-card-item-best">
@@ -256,9 +236,7 @@
                               <div class="book__trend-card-item-price">
                                    <p>$56,9</p>
                               </div>
-                         </div>
-
-
+                         </div> -->
                     </div>
                </div>
           </div>
@@ -455,7 +433,7 @@
                     </div>
                </div>
                <div class="categories__content-card">
-                    <a href="">
+                    <!-- <a href="">
                          <div class="categories__content-item">
                               <p>Arts & Photohraphy</p>
                               <span>214+ Item</span>
@@ -478,7 +456,7 @@
                               <p>Arts & Photohraphy</p>
                               <span>214+ Item</span>
                          </div>
-                    </a>
+                    </a> -->
                     <!-- <div class="categories__content-item">
                          <p>Arts & Photohraphy</p>
                          <span>214+ Item</span>
@@ -510,9 +488,8 @@
 
                <div class="seller__card">
                     <div class="seller__card-btn next top_btn">
-                         <button  id="top-book-next">
-                              < 
-                         </button>
+                         <button id="top-book-next">
+                              < </button>
                     </div>
                     <div class="seller__card-content top-book" id="top-book">
                          <div class="seller__item flex-direction">
@@ -617,7 +594,7 @@
                          </div>
                     </div>
                     <div class="seller__card-btn previous top_btn">
-                         <button  id="top-book-prev">></button>
+                         <button id="top-book-prev">></button>
                     </div>
                </div>
 
@@ -641,8 +618,7 @@
           <div class="seller__card">
                <div class="seller__card-btn next">
                     <button id="featured-next">
-                         < 
-                    </button>
+                         < </button>
                </div>
                <div class="seller__card-content" id="featured">
 
@@ -778,9 +754,8 @@
                     </div>
                     <div class="sale__list">
                          <div class="sale__btn next-sale">
-                              <button  id="sale__list-next">
-                                   < 
-                              </button>
+                              <button id="sale__list-next">
+                                   < </button>
                          </div>
                          <div class="sale__item">
                               <div class="sale__item-img"></div>
@@ -873,7 +848,7 @@
                               </div>
                          </div>
                          <div class="sale__btn next-preveous">
-                              <button  id="sale__list-prev">
+                              <button id="sale__list-prev">
                                    >
                               </button>
                          </div>
@@ -1125,11 +1100,10 @@
                     </div>
                     <div class="testiomonials__btn">
                          <button class="testiomonials__arrow-left">
-                              < 
-                         </button>
-                         <button class="testiomonials__arrow-right">
-                              >
-                         </button>
+                              < </button>
+                                   <button class="testiomonials__arrow-right">
+                                        >
+                                   </button>
                     </div>
                </div>
           </div>

@@ -1,0 +1,179 @@
+{
+  "category": [
+    {
+      "id": "1",
+      "year": "2000",
+      "publisher": "anaib.az",
+      "format": "Hard Cover",
+      "users": "210",
+      "name": "Biography",
+      "status": "1"
+    },
+    {
+      "id": "2",
+      "year": "2008",
+      "publisher": "araz",
+      "users": "320",
+      "format": "E-Book",
+      "name": "Adventure",
+      "status": "1"
+    },
+    {
+      "id": "3",
+      "year": "2012",
+      "publisher": "qanun-nesriyyat",
+      "format": "Paper Back",
+      "name": "Fairy Tails",
+      "users": "320",
+      "status": "1"
+    },
+    {
+      "id": "4",
+      "year": "2012",
+      "publisher": "qanun-nesriyyat",
+      "format": "Paper Back",
+      "name": "Adventure",
+      "users": "320",
+      "status": "1"
+    }
+  ],
+  "book_data": [
+    {
+      "status": "1",
+      "pageLength": "450",
+      "img": "https://picsum.photos/250/300",
+      "id": "1",
+      "price": "56.9",
+      "categoryName": "Biography",
+      "author": "James Sulivan",
+      "oldPrice": "80",
+      "best_seller": true,
+      "star": "gvg",
+      "rating": "4.5",
+      "categoryId": "1",
+      "language": "English",
+      "bookName": "Such a Fun Age",
+      "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "status": "1",
+      "pageLength": "610",
+      "img": "https://picsum.photos/250/300",
+      "id": "2",
+      "price": "34,6",
+      "categoryName": "Adventure",
+      "oldPrice": "40",
+      "author": "Margareth Mc. Lee",
+      "best_seller": false,
+      "rating": "1",
+      "language": "English",
+      "star": "gvg",
+      "categoryId": "2",
+      "bookName": "The Adventure",
+      "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "status": "0",
+      "img": "https://picsum.photos/250/300",
+      "id": "3",
+      "pageLength": "150",
+      "categoryName": "Fairy Tails",
+      "price": "41,3",
+      "author": "Cloe Mamora",
+      "best_seller": false,
+      "oldPrice": "40",
+      "language": "English",
+      "star": "gvg",
+      "rating": "3",
+      "categoryId": "3",
+      "bookName": "Emily and the Backbone",
+      "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "status": "1",
+      "img": "https://picsum.photos/250/300",
+      "id": "3",
+      "categoryName": "Fairy Tails",
+      "price": "41,3",
+      "pageLength": "50",
+      "author": "Cloe Mamora",
+      "best_seller": false,
+      "star": "gvg",
+      "language": "English",
+      "rating": "3",
+      "oldPrice": "40",
+      "categoryId": "3",
+      "bookName": "Emily and the Backbone",
+      "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "status": "1",
+      "img": "https://picsum.photos/250/300",
+      "id": "2",
+      "price": "34,6",
+      "categoryName": "Adventure",
+      "oldPrice": "40",
+      "pageLength": "950",
+      "author": "Margareth Mc. Lee",
+      "best_seller": false,
+      "rating": "1",
+      "language": "English",
+      "star": "gvg",
+      "categoryId": "2",
+      "bookName": "The Adventure",
+      "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "status": "1",
+      "img": "https://picsum.photos/250/300",
+      "id": "3",
+      "pageLength": "200",
+      "categoryName": "Fairy Tails",
+      "price": "41,3",
+      "author": "Cloe Mamora",
+      "best_seller": false,
+      "star": "gvg",
+      "language": "English",
+      "rating": "3",
+      "categoryId": "3",
+      "oldPrice": "40",
+      "bookName": "Emily and the Backbone",
+      "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  ],
+
+  "news": [
+    {
+      "id": "1",
+      "img": "https://picsum.photos/280/160",
+      "imgAuthor": "https://picsum.photos/50/50",
+      "newsTitle": "Why reading is important for our children?",
+      "newsDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+      "newsAuthor": "James Wong"
+    },
+    {
+      "id": "2",
+      "newsTitle": "Benefits of reading: Smart, Diligent, Happy",
+      "img": "https://picsum.photos/280/160",
+      "imgAuthor": "https://picsum.photos/50/50",
+      "newsDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+      "newsAuthor": "James Wong"
+    },
+    {
+      "id": "3",
+      "newsTitle": "What books you should read in 2020?",
+      "img": "https://picsum.photos/280/160",
+      "imgAuthor": "https://picsum.photos/50/50",
+      "newsDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+      "newsAuthor": "James Wong"
+    },
+    {
+      "id": "4",
+      "newsTitle": "10 Things you must know to improve your reading skills",
+      "img": "https://picsum.photos/280/160",
+      "imgAuthor": "https://picsum.photos/50/50",
+      "newsDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+      "newsAuthor": "James Wong"
+    }
+  ]
+}
